@@ -24,6 +24,8 @@ with open(path.join(this_dir, 'README.md'), encoding='utf-8') as f:
 __version__ = "0.0.1"
 description = "A specialized client for the Open States API"
 
+
+
 setup(
     name='openstate',
 
@@ -51,7 +53,7 @@ setup(
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
 
         # Indicate who your project is intended for
         'Topic :: Sociology :: History',
@@ -89,7 +91,7 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['pyopenstates', 'fire', 'apscheduler', 'nameparser'],
+    install_requires=['datetime', 'pyopenstates', 'fire', 'apscheduler', 'nameparser'],
     extras_require={
         'test': ['coverage', 'pytest', 'pytest-cov'],
     },

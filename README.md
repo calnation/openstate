@@ -7,12 +7,19 @@ Generates CSV files for use in a wiki.
 ### pip install from github repository.
 
 ```sh
-$ pip install git+https://github.com/calnation/openstate.git
+$ pip install git+https://github.com/calnation/openstate
 $ openstate
 ```
 
 ## Use
-Add a 'openstate.ini' file to '/' directory and include in it the 'STATE' and 'OPENSTATES_API_KEY'.
+Add a `openstate.ini` file to `/` directory and include in it the following:
+```sh
+[main]
+OPENSTATES_API_KEY = 
+OUTPUT_PATH = 
+STATE = 
+TZ = 
+```
 
 To use (with caution), simply:
 
